@@ -17,10 +17,10 @@ class MenuState extends State<Menu> {
           ),
           child: new Block(
             children: [
-              new Text('Home', style: this.config.whiteText),
-              new Text('Home', style: this.config.whiteText),
-              new Text('Home', style: this.config.whiteText),
-              new Text('Home', style: this.config.whiteText),
+              new Text('Home', style: this.widget.whiteText),
+              new Text('Home', style: this.widget.whiteText),
+              new Text('Home', style: this.widget.whiteText),
+              new Text('Home', style: this.widget.whiteText),
             ]
           )
         )

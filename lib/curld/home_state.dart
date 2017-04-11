@@ -12,7 +12,7 @@ class HomeState extends State<Home> {
       drawer: new Menu(),
       appBar: new AppBar(
         title: new Align(
-          child: new Image.network(config.logoUrl),
+          child: new Image.network(widget.logoUrl),
           alignment: new FractionalOffset(0.3, 0.5)
         ),
         leading: new IconButton(
@@ -23,7 +23,7 @@ class HomeState extends State<Home> {
       body: new Container(
         decoration: new BoxDecoration(
           backgroundImage: new BackgroundImage(
-            image: new NetworkImage(config.bgImageUrl),
+            image: new NetworkImage(widget.bgImageUrl),
             fit: ImageFit.cover
           )
         ),
@@ -31,7 +31,7 @@ class HomeState extends State<Home> {
           child: new Padding(
             padding: new EdgeInsets.all(20.0),
             child: new Text(
-              config.title,
+              widget.title,
               style: new TextStyle(
                 color: new Color.fromRGBO(255, 255, 255, 1.0),
                 fontWeight: FontWeight.w900,
